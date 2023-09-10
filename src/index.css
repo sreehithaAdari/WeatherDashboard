@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #03a9f4, #00bcd4);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* App container */
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Input section */
+.section__inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.section__inputs input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #333; /* Bright text color */
+  font-size: 20px;
+  width: 70%;
+  text-align: left; /* Align text to the right */
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.section__inputs input:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.section__inputs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #a09e9d; /* Creative button color */
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.section__inputs button:hover {
+  background: #1a1818; /* Button color on hover */
+}
+
+/* Temperature section */
+.section__temperature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon img {
+  max-width: 100px;
+}
+
+.icon h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.temperature h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
